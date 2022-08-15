@@ -1,13 +1,53 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="【JavaScript課題4】クイズアプリ作成">
-    <title>【JavaScript課題4】クイズアプリ作成</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="【JavaScript課題4】クイズアプリ作成">
+  <title>【JavaScript課題4】クイズアプリ作成</title>
 </head>
+
 <body>
+  <div>【完成イメージ】</div>
+  <h2 id="title">ようこそ</h2>
+  <h4 id="genre"></h4>
+  <h4 id="difficulty"></h4>
+  <div id="question">以下のボタンをクリック</div>
+  <ul id="answers"></ul>
+  <button id="start-button">開始</button>
+  <div id="back-home"></div>
+  <style>
+    h4 {
+      margin: 0;
+    }
+
+    #difficulty {
+      margin-bottom: 10px;
+    }
+
+    #question {
+      line-height:1.8; 
+      border-top: 1px solid #d1d1d1; 
+      border-bottom: 1px solid #d1d1d1;
+    }
+
+    ul {
+      padding-left: 0;
+      padding-bottom: 8px;
+    }
+
+    li {
+      list-style: none;
+      margin-bottom: 4px;
+    }
+
+    .active {
+      display: none;
+    }
+  </style>
   <script src="main.js"></script>
 </body>
+
 </html>
